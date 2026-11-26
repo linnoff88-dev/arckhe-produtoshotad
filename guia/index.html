@@ -124,16 +124,16 @@
         <a class="btn ghost" href="https://github.com/inematds/produtoshotad" target="_blank" rel="noopener">Ver no GitHub</a>
       </div>
     </div>
-    <figure><img src="assets/hero.jpg" alt="Ilustração do pipeline produtoshotad"></figure>
+    <figure><img src="assets/hero.jpg" alt="Ilustraçêo do pipeline produtoshotad"></figure>
   </div>
 </header>
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>Automação de creative de anúncio com IA</h2>
-  <p class="sub">Um agente Claude Code orquestra geração de imagem, animação de vídeo e voz — sem precisar de fotógrafo, editor de vídeo ou dublê de anúncio pago em cada teste.</p>
+  <h2>Automaçêo de creative de anúncio com IA</h2>
+  <p class="sub">Um agente Claude Code orquestra geraçêo de imagem, animaçêo de vídeo e voz — sem precisar de fotógrafo, editor de vídeo ou dublê de anúncio pago em cada teste.</p>
   <div class="grid g3">
-    <div class="card"><h3>📸 Anti-drift</h3><p>Referência do produto (hero + close-up) travada e reanexada em toda geração — o produto não muda de forma/cor/proporção entre as 5 variações.</p></div>
+    <div class="card"><h3>📸 Anti-drift</h3><p>Referência do produto (hero + close-up) travada e reanexada em toda geraçêo — o produto nêo muda de forma/cor/proporçêo entre as 5 variações.</p></div>
     <div class="card"><h3>🧩 3 workers</h3><p>Agnes (US$0, só imagens), HyperFrames (vídeo animando as stills, sem IA de vídeo) ou o pipeline original completo (Fal.ai/Seedance + ElevenLabs).</p></div>
     <div class="card"><h3>✅ QA obrigatório</h3><p>Checkpoint humano antes de cada estágio avançar — gate que já pegou alucinações reais (embalagem fictícia, texto ilegível) durante o desenvolvimento.</p></div>
   </div>
@@ -142,18 +142,18 @@
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>Do photo ao anúncio pronto</h2>
-  <p class="sub">Os 3 workers compartilham a mesma estrutura de entrega — 5 stills + 5 vídeos — e só divergem na ferramenta de geração.</p>
+  <p class="sub">Os 3 workers compartilham a mesma estrutura de entrega — 5 stills + 5 vídeos — e só divergem na ferramenta de geraçêo.</p>
   <div class="flow">
     <span>1 foto de produto</span><span class="arr">→</span>
     <span>hero + close-up travados</span><span class="arr">→</span>
     <span>5 stills (3 plain + 2 overlay)</span><span class="arr">→</span>
     <span>QA humano</span><span class="arr">→</span>
-    <span>animação HyperFrames <em>ou</em> i2v Seedance</span><span class="arr">→</span>
+    <span>animaçêo HyperFrames <em>ou</em> i2v Seedance</span><span class="arr">→</span>
     <span>voz (Kokoro/ElevenLabs)</span><span class="arr">→</span>
     <span>5 vídeos 9:16</span>
   </div>
   <div class="grid g3" style="margin-top:24px">
-    <div class="card"><h3>1 · Agnes</h3><p>Só imagens, API Agnes AI, US$0 de custo de geração. Sem vídeo.</p></div>
+    <div class="card"><h3>1 · Agnes</h3><p>Só imagens, API Agnes AI, US$0 de custo de geraçêo. Sem vídeo.</p></div>
     <div class="card"><h3>2 · HyperFrames</h3><p>Anima as stills já aprovadas com GSAP (Ken Burns, typewriter, glass card, flash-cut) — nenhum modelo de vídeo por IA envolvido.</p></div>
     <div class="card"><h3>3 · Original</h3><p>Pipeline completo com Fal.ai/Seedance para image-to-video e ElevenLabs para voz — qualidade máxima, custo pago.</p></div>
   </div>
@@ -188,17 +188,17 @@ ELEVENLABS_API_KEY=...</pre></div>
   <div class="step"><div class="b">2</div><div>
     <h3>Gere as 5 stills (worker 1, Agnes)</h3>
     <p>3 plain (uso direto) + 2 overlay (base para copy). Retry automático em 503, US$0.</p>
-<pre><span class="k">python3 scripts/agnes_stills.py products/hero.png --desc "descrição em inglês" --ratio 9:16</span>  <span class="c"># output/stills/*.png</span></pre>
+<pre><span class="k">python3 scripts/agnes_stills.py products/hero.png --desc "descriçêo em inglês" --ratio 9:16</span>  <span class="c"># output/stills/*.png</span></pre>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
-    <h3>QA checkpoint (obrigatório, não pule)</h3>
-    <p>Confira as 5 imagens contra a foto real antes de seguir — pega alucinação de embalagem/texto fictício antes de virar vídeo.</p>
+    <h3>QA checkpoint (obrigatório, nêo pule)</h3>
+    <p>Confira as 5 imagens contra a foto real antes de seguir — pega alucinaçêo de embalagem/texto fictício antes de virar vídeo.</p>
 <pre><span class="c"># abra e confira cada still em output/stills/ antes do próximo passo</span></pre>
   </div></div>
 
   <div class="step"><div class="b">4</div><div>
-    <h3>Gere a narração (opcional, Kokoro local)</h3>
+    <h3>Gere a narraçêo (opcional, Kokoro local)</h3>
     <p>TTS local, sem custo, reusa os pesos já baixados pelo HyperFrames.</p>
 <pre><span class="k">python3 scripts/kokoro_tts.py "seu roteiro aqui" -o output/voz/ad.wav</span>  <span class="c"># .wav local</span></pre>
   </div></div>
@@ -215,20 +215,20 @@ ELEVENLABS_API_KEY=...</pre></div>
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
   <h2>Produções de teste</h2>
-  <p class="sub">Contact sheets de dois anúncios de demonstração gerados de ponta a ponta pelo pipeline (produtos fictícios, usados só para validar a técnica).</p>
+  <p class="sub">Contact sheets de dois anúncios de demonstraçêo gerados de ponta a ponta pelo pipeline (produtos fictícios, usados só para validar a técnica).</p>
   <div class="ex">
     <figure><img src="assets/ex1.jpg" alt="Contact sheet do anúncio de caixa de som"><figcaption>Anúncio de 19s, 6 cenas — Ken Burns, typewriter, glass card e CTA final.</figcaption></figure>
-    <figure><img src="assets/ex2.jpg" alt="Contact sheet do anúncio de cuidado com pet"><figcaption>Segunda produção — legenda com palavra-chave destacada e transição flash-cut entre cenas.</figcaption></figure>
+    <figure><img src="assets/ex2.jpg" alt="Contact sheet do anúncio de cuidado com pet"><figcaption>Segunda produçêo — legenda com palavra-chave destacada e transiçêo flash-cut entre cenas.</figcaption></figure>
   </div>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
   <span class="chip">Roadmap</span>
   <h2>Onde o projeto está</h2>
-  <p class="sub">Os 3 workers estão implementados e os workers 1+2 foram testados de ponta a ponta (incluindo bugs reais encontrados e corrigidos no processo).</p>
-  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Workers 1 e 2 implementados e testados</strong><span>Stills via Agnes, vídeo via HyperFrames — testado com produção completa, 0 erros no lint, contraste WCAG AA.</span></div></div>
-  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Documentação de mecânica (fal-setup, elevenlabs-setup)</strong><span>Worker 3 documentado e pronto, aguardando teste real com produto de verdade.</span></div></div>
-  <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Teste do worker 3 com produto real</strong><span>Rodar o pipeline Fal.ai/Seedance com uma foto de produto real, não fictícia.</span></div></div>
+  <p class="sub">Os 3 workers estêo implementados e os workers 1+2 foram testados de ponta a ponta (incluindo bugs reais encontrados e corrigidos no processo).</p>
+  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Workers 1 e 2 implementados e testados</strong><span>Stills via Agnes, vídeo via HyperFrames — testado com produçêo completa, 0 erros no lint, contraste WCAG AA.</span></div></div>
+  <div class="phase"><div class="tag">Feito</div><div class="d"><strong>Documentaçêo de mecânica (fal-setup, elevenlabs-setup)</strong><span>Worker 3 documentado e pronto, aguardando teste real com produto de verdade.</span></div></div>
+  <div class="phase"><div class="tag">Próximo</div><div class="d"><strong>Teste do worker 3 com produto real</strong><span>Rodar o pipeline Fal.ai/Seedance com uma foto de produto real, nêo fictícia.</span></div></div>
 </div></section>
 
 <footer>

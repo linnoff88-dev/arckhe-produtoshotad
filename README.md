@@ -1,4 +1,4 @@
-﻿# produtoshotad
+ï»¿# produtoshotad
 
 <div align="center">
   <img src="capa/logo.svg" alt="Arckhé AI" height="48" />
@@ -6,13 +6,13 @@
 </div>
 
 
-Pipeline de IA que transforma 1 foto de produto em 5 imagens de anÃºncio e 5 vÃ­deos curtos (9:16), em 3 workers (Agnes/US$0, HyperFrames/sem IA de vÃ­deo, ou o pipeline original Fal.ai/Seedance + ElevenLabs).
+Pipeline de IA que transforma 1 foto de produto em 5 imagens de anêÂºncio e 5 vêÂ­deos curtos (9:16), em 3 workers (Agnes/US$0, HyperFrames/sem IA de vêÂ­deo, ou o pipeline original Fal.ai/Seedance + ElevenLabs).
 
-## ðŸ“– Guia de uso
+## ê°Å¸ââ Guia de uso
 
 Guia completo (landing + passo a passo): **https://inematds.github.io/produtoshotad/guia/**
 
-Ver `doc/CLAUDE.md` e `doc/PLANO-WORKFLOWS.md` para a documentaÃ§Ã£o tÃ©cnica completa dos 3 workers.
+Ver `doc/CLAUDE.md` e `doc/PLANO-WORKFLOWS.md` para a documentaêÂ§êÂ£o têÂ©cnica completa dos 3 workers.
 
 ---
 

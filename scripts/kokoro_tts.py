@@ -21,8 +21,8 @@ def main():
 
     if not (os.path.exists(MODEL) and os.path.exists(VOICES)):
         raise SystemExit(
-            f'Modelos Kokoro não encontrados em {MODEL} / {VOICES}. '
-            'Baixe-os (ver documentação do HyperFrames TTS) antes de rodar este script.'
+            f'Modelos Kokoro nêo encontrados em {MODEL} / {VOICES}. '
+            'Baixe-os (ver documentaçêo do HyperFrames TTS) antes de rodar este script.'
         )
 
     from kokoro_onnx import Kokoro

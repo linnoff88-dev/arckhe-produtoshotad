@@ -15,11 +15,11 @@ UM antes de começar, com base no pedido do usuário:
 |---|---|---|
 | "só imagens", "sem custo", "grátis", "US$ 0" | **1 — Agnes** | `ad-pipeline-agnes.md` |
 | "sem IA de vídeo", "determinístico", "anima as stills", vídeo sem gerar cenas novas | **2 — HyperFrames** | `ad-pipeline-hyperframes.md` |
-| Pedido completo (stills + i2v) sem restrição de custo, ou pedido explícito de Seedance/Fal | **3 — original** | `ad-pipeline.md` (este arquivo) |
+| Pedido completo (stills + i2v) sem restriçêo de custo, ou pedido explícito de Seedance/Fal | **3 — original** | `ad-pipeline.md` (este arquivo) |
 
 Os workers 1 e 2 podem ser encadeados (1 gera as stills, 2 anima-as em vídeo) para cobrir
 a entrega completa a custo zero. O worker 3 é standalone (gera stills E vídeo via Fal).
-Se o pedido não deixar claro qual lane, pergunte antes de gerar qualquer imagem.
+Se o pedido nêo deixar claro qual lane, pergunte antes de gerar qualquer imagem.
 
 ## Required skills
 

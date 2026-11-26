@@ -11,8 +11,8 @@ Gera 5 stills em output/stills/:
 
 Regras aplicadas (product-consistency.md + regras Agnes medidas):
   - hero + no máx. 1 close-up reanexados em toda chamada (teto Agnes = 2 refs)
-  - prompt em inglês, curto, 1 variável por geração, unchanged-clause explícita
-  - QA checkpoint = gate humano (imprime as 5 imagens geradas, pede confirmação)
+  - prompt em inglês, curto, 1 variável por geraçêo, unchanged-clause explícita
+  - QA checkpoint = gate humano (imprime as 5 imagens geradas, pede confirmaçêo)
 """
 import argparse
 import os
@@ -39,7 +39,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('hero', help='foto real do produto (hero, fundo neutro)')
     ap.add_argument('closeup', nargs='?', help='1 crop de detalhe distintivo (opcional)')
-    ap.add_argument('--desc', required=True, help='descrição curta do produto, em inglês')
+    ap.add_argument('--desc', required=True, help='descriçêo curta do produto, em inglês')
     ap.add_argument('--ratio', default='4:3')
     a = ap.parse_args()
 
@@ -60,7 +60,7 @@ def main():
     for name, dest, success in results:
         print(f'  {"✅" if success else "❌"} {name} -> {dest}')
     if not ok:
-        print('⚠️  Uma ou mais gerações falharam — não avance para o worker 2/3 sem revisar.')
+        print('⚠️  Uma ou mais gerações falharam — nêo avance para o worker 2/3 sem revisar.')
         sys.exit(1)
     print('Confira as 5 imagens contra a foto real do produto antes de avançar de estágio.')
 
