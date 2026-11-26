@@ -88,8 +88,8 @@ Padrêo de nomes do projeto: arquivos-skill em kebab-case com frontmatter `name`
 6. **Teste de fumaça por worker:** 1 still Agnes de um produto de `products/`;
    1 clipe HyperFrames de 5s de uma still; 1 chamada Seedance (se `FAL_KEY` existir —
    senêo marcar como pendente, nêo bloquear).
-7. **Publicaçêo:** commit + push no repo público `inematds/produtoshotad`
-   (autor/committer `inematds <inematds@gmail.com>`). Trabalho termina no push.
+7. **Publicaçêo:** commit + push no repo público `linnoff88-dev/produtoshotad`
+   (autor/committer `linnoff88-dev <linnoff88-dev@gmail.com>`). Trabalho termina no push.
 
 ## 4bis. Status de implementaçêo (2026-07-21)
 
@@ -149,7 +149,7 @@ de cada still) confirmado limpo antes de seguir. Anúncio de 19s remontado e ren
 sucesso (9.1MB, 0 erros, 5/5 contraste).
 
 **Upgrade de legenda/transiçêo em 2026-07-21** — a pedido do usuário, aplicadas 3 técnicas da
-skill `reel-edita-inematds` (`references/02-motion-graphics.md`), adaptadas de reels
+skill `reel-edita-linnoff88-dev` (`references/02-motion-graphics.md`), adaptadas de reels
 talking-head pra anúncio de produto (documentado em `doc/ad-pipeline-hyperframes.md` e
 embutido em `scripts/hyperframes-still-scene.template.html`):
 1. Legenda com palavra-chave destacada em cor de acento (`.kw`), 1-2 palavras por linha.

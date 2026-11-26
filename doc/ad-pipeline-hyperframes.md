@@ -55,9 +55,9 @@ Do not hand-roll assembly logic or substitute a generic video-editing approach.
   value `npm run check` itself suggested) passed 19/19. Always re-run `npm run check` after
   picking an accent color instead of eyeballing it.
 
-## Caption and transition upgrade (adapted from `reel-edita-inematds`)
+## Caption and transition upgrade (adapted from `reel-edita-linnoff88-dev`)
 
-The base template also carries three techniques borrowed from the `reel-edita-inematds`
+The base template also carries three techniques borrowed from the `reel-edita-linnoff88-dev`
 skill's motion-graphics reference (`references/02-motion-graphics.md`) — proven there for
 talking-head reels, verified here on a real 6-scene product ad:
 
